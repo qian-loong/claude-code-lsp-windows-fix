@@ -32,7 +32,7 @@ pathToFileURL(path.resolve(file)).href  // 生成: file:///C:/path/to/file
 
 ## ⚡ 快速开始
 
-### 方法 1: 手动修复单个文件（推荐）
+### 手动修复单个文件（推荐）
 
 ```bash
 # 1. 克隆或下载本项目
@@ -40,7 +40,7 @@ git clone https://github.com/qian-loong/claude-code-lsp-windows-fix.git
 cd claude-code-lsp-windows-fix
 
 # 2. 运行修复（指定 CLI 文件路径）
-node scripts/apply-lsp-fix-anchor-based.cjs /path/to/cli.js
+node scripts/apply-lsp-fix-anchor-based.cjs <path>\@anthropic-ai\claude-code\cli.js
 
 # 示例：
 node scripts/apply-lsp-fix-anchor-based.cjs C:/Users/username/node_modules/@anthropic-ai/claude-code/cli.js
