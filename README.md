@@ -10,10 +10,10 @@
 Claude Code CLI 的 LSP 功能在 Windows 上使用了错误的文件 URI 格式：
 
 ```javascript
-// 错误格式（2.0.74 - 2.1.9）
+// 错误格式（2.0.74 - 2.1.12）
 `file://${path.resolve(file)}`  // 生成: file://C:\path\to\file
 
-// 正确格式（2.1.10+）
+// 正确格式
 pathToFileURL(path.resolve(file)).href  // 生成: file:///C:/path/to/file
 ```
 
@@ -95,7 +95,7 @@ claude
 **为什么使用 `return `语句作为锚点？**
 
 1. **稳定性**: LSP 函数的 `return `语句结构固定
-   
+  
    ```javascript
    return {
      initialize: xxx,
