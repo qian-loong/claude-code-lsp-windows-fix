@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Test packages (large binary files)
+test-packages/
+
+# Test results
+test-results/
+
+# Backups
+backups/
+test-backups/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~
